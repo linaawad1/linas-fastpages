@@ -5,7 +5,6 @@ toc: true
 layout: base
 badges: true
 categories: [Final]
-layout: notebook
 ---
 
 ### Question Review
