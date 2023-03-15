@@ -29,28 +29,6 @@
   
 
   
-
-  
-      ,"page3": {
-          "title": "Fantastic Food Finder",
-          "content": "Fantastic Food Finder . Plan your next meals! Get recipes everyday based on what food you feel like eating! . . Please select a meal type: Breakfast Lunch Dinner Dessert Please select a Cuisine type: Chinese Italian Indian Mexican American Recipe Type: Breakfast Lunch Dinner Dessert Recipe Cuisine: Chinese Italian Indian Mexican American Recipe Name: Recipe Link: .",
-          "url": "https://linaawad1.github.io/linas-fastpages/_pages/finalmealsearch.html",
-          "relUrl": "/_pages/finalmealsearch.html",
-          "date": ""
-      }
-      
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
   
 
   
@@ -68,7 +46,10 @@
   
 
   
-      ,"page14": {
+  
+
+  
+      ,"page9": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://linaawad1.github.io/linas-fastpages/robots.txt",
