@@ -127,7 +127,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#DataFrame-Extract-Column">DataFrame Extract Column </a></li>
 <li class="toc-entry toc-h2"><a href="#DataFrame-Sort">DataFrame Sort </a></li>
 <li class="toc-entry toc-h2"><a href="#DataFrame-Selection-or-Filter">DataFrame Selection or Filter </a></li>
-<li class="toc-entry toc-h2"><a href="#DataFrame-Selection-Max-and-Min">DataFrame Selection Max and Min </a></li>
+<li class="toc-entry toc-h2"><a href="#DataFrame-Selection-Max-and-Min">DataFrame Selection Max and Min </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#other-uses-of-my-data">other uses of my data </a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#Create-your-own-DataFrame">Create your own DataFrame </a>
@@ -374,55 +378,15 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">'GPA'</span><span class="p">]])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print(df[['GPA']])</span>
 
-<span class="nb">print</span><span class="p">()</span>
+<span class="c1"># print()</span>
 
-<span class="c1">#try two columns and remove the index from print statement</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">'Student ID'</span><span class="p">,</span><span class="s1">'GPA'</span><span class="p">]]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<span class="c1"># #try two columns and remove the index from print statement</span>
+<span class="c1"># print(df[['Student ID','GPA']].to_string(index=False))</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>     GPA
-0   3.57
-1   4.00
-2   2.78
-3   3.45
-4   4.75
-5   3.33
-6   2.95
-7   3.90
-8   3.15
-9   2.80
-10  3.45
-11  2.75
-
-Student ID  GPA
-       123 3.57
-       246 4.00
-       578 2.78
-       469 3.45
-       324 4.75
-       313 3.33
-       145 2.95
-       167 3.90
-       235 3.15
-       nil 2.80
-       469 3.45
-       456 2.75
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -523,55 +487,15 @@ Pokemon Name  Speed
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'GPA'</span><span class="p">]))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print(df.sort_values(by=['GPA']))</span>
 
-<span class="nb">print</span><span class="p">()</span>
+<span class="c1"># print()</span>
 
-<span class="c1">#sort the values in reverse order</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'GPA'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<span class="c1"># #sort the values in reverse order</span>
+<span class="c1"># print(df.sort_values(by=['GPA'], ascending=False))</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>   Student ID Year in School   GPA
-11        456             10  2.75
-2         578             12  2.78
-9         nil              9  2.80
-6         145             12  2.95
-8         235      9th Grade  3.15
-5         313             20  3.33
-3         469             11  3.45
-10        469             11  3.45
-0         123             12  3.57
-7         167             10  3.90
-1         246             10  4.00
-4         324         Junior  4.75
-
-   Student ID Year in School   GPA
-4         324         Junior  4.75
-1         246             10  4.00
-7         167             10  3.90
-0         123             12  3.57
-3         469             11  3.45
-10        469             11  3.45
-5         313             20  3.33
-8         235      9th Grade  3.15
-6         145             12  2.95
-9         nil              9  2.80
-2         578             12  2.78
-11        456             10  2.75
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -672,32 +596,10 @@ Pokemon Name  Speed
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">GPA</span> <span class="o">&gt;</span> <span class="mf">3.00</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print(df[df.GPA &gt; 3.00])</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>   Student ID Year in School   GPA
-0         123             12  3.57
-1         246             10  4.00
-3         469             11  3.45
-4         324         Junior  4.75
-5         313             20  3.33
-7         167             10  3.90
-8         235      9th Grade  3.15
-10        469             11  3.45
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -764,30 +666,11 @@ Pokemon Name  Speed
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">GPA</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">GPA</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
-<span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">GPA</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">GPA</span><span class="o">.</span><span class="n">min</span><span class="p">()])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># print()</span>
+<span class="c1"># print(df[df.GPA == df.GPA.min()])</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>  Student ID Year in School   GPA
-4        324         Junior  4.75
-
-   Student ID Year in School   GPA
-11        456             10  2.75
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -823,6 +706,165 @@ Pokemon Name  Speed
 13   Jigglypuff  Fairy     20     False
 </pre>
 </div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="other-uses-of-my-data">
+<a class="anchor" href="#other-uses-of-my-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>other uses of my data<a class="anchor-link" href="#other-uses-of-my-data"> </a>
+</h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mean</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">"Speed"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The average speed among these pokemon is"</span><span class="p">,</span> <span class="n">mean</span><span class="p">,</span> <span class="s2">"."</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The average speed among these pokemon is 67.75 .
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([['Bulbasaur', 'Grass', 45, 'False'],
+       ['Ivysaur', 'Grass', 60, 'False'],
+       ['Charmander', 'Fire', 65, 'False'],
+       ['Squirtle', 'Water', 43, 'False'],
+       ['Caterpie', 'Bug', 45, 'False'],
+       ['Weedle', 'Bug', 50, 'False'],
+       ['Pidgey', 'Flying', 56, 'False'],
+       ['Spearow', 'Flying', 70, 'False'],
+       ['Pikachu', 'Electric', 90, 'False'],
+       ['Sandshrew', 'Ground', 40, 'False'],
+       ['Ekans', 'Poison', 55, 'False'],
+       ['Vulpix', 'Fire', 65, 'False'],
+       ['Jigglypuff', 'Fairy', 20, 'False'],
+       ['Diglett', 'Ground', 95, 'False'],
+       ['Meowth', 'Normal', 90, 'False'],
+       ['Entei', 'Fire', 100, 'True'],
+       ['Raikou', 'Electric', 115, 'True'],
+       ['Larvitar', 'Rock', 41, 'True'],
+       ['Lugia', 'Psychic', 110, 'True'],
+       ['Celebi', 'Psychic', 100, 'True']], dtype=object)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="s1">'Speed'</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>65</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="s1">'Pokemon Name'</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>'Pikachu'</pre>
+</div>
+
 </div>
 
 </div>
@@ -1684,14 +1726,6 @@ Please also refer to the documentation for alternative solver options:
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Blogs for 2.3 College Board:</p>
-
-</div>
-</div>
-</div>
 </div>
 
 
