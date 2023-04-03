@@ -501,25 +501,10 @@ Records exist name coconut, or error.
         <span class="k">except</span><span class="p">:</span>  <span class="c1"># error raised if object not created</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">"Unknown error name </span><span class="si">{name}</span><span class="s2">"</span><span class="p">)</span>
         
-<span class="n">create</span><span class="p">()</span>
+<span class="c1">#create()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Created
- Kirk
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -548,61 +533,10 @@ Records exist name coconut, or error.
     <span class="n">json_ready</span> <span class="o">=</span> <span class="p">[</span><span class="n">flavor</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="k">for</span> <span class="n">flavor</span> <span class="ow">in</span> <span class="n">table</span><span class="p">]</span> <span class="c1"># "List Comprehensions", for each user add user.read() to list</span>
     <span class="k">return</span> <span class="n">json_ready</span>
 
-<span class="n">read</span><span class="p">()</span>
+<span class="c1">#read()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[{'id': 1,
-  'name': 'Sherlock',
-  'flavor': 'chocolate',
-  'size': 'small',
-  'recommend': 'yes'},
- {'id': 2,
-  'name': 'Dude',
-  'flavor': 'vanilla',
-  'size': 'medium',
-  'recommend': 'yes'},
- {'id': 3,
-  'name': 'Bunny',
-  'flavor': 'mint',
-  'size': 'large',
-  'recommend': 'yes'},
- {'id': 4,
-  'name': 'Lion',
-  'flavor': 'mango',
-  'size': 'small',
-  'recommend': 'yes'},
- {'id': 5,
-  'name': 'Penguin',
-  'flavor': 'rocky road',
-  'size': 'medium',
-  'recommend': 'yes'},
- {'id': 6,
-  'name': 'Turtle',
-  'flavor': 'coconut',
-  'size': 'small',
-  'recommend': 'yes'},
- {'id': 7, 'name': '', 'flavor': '', 'size': '', 'recommend': ''},
- {'id': 8,
-  'name': 'Kirk',
-  'flavor': 'oreo',
-  'size': 'small',
-  'recommend': 'no'}]</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -645,24 +579,10 @@ Records exist name coconut, or error.
         <span class="k">except</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"There was an problem in updating the review, </span><span class="si">{</span><span class="n">flavor</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
         
-<span class="n">update</span><span class="p">()</span>
+<span class="c1">#update()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The flavor, oreo, has been updated by Kirk, with the size smakk, and they said: yes they do recommend it.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -699,24 +619,10 @@ Records exist name coconut, or error.
             <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Flavor, </span><span class="si">{</span><span class="n">flavor</span><span class="si">}</span><span class="s2"> has been deleted."</span><span class="p">)</span>
         <span class="k">except</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">"Enter a flavor that already exists"</span><span class="p">)</span>        
-<span class="n">delete</span><span class="p">()</span>
+<span class="c1">#delete()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Flavor, oreo has been deleted.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -801,30 +707,10 @@ Records exist name coconut, or error.
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="n">read</span><span class="p">()</span>
+<span class="c1">#read()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>(1, 'Sherlock', 'chocolate', 'small', 'yes')
-(2, 'Dude', 'vanilla', 'medium', 'yes')
-(3, 'Bunny', 'mint', 'large', 'yes')
-(4, 'Lion', 'mango', 'small', 'yes')
-(5, 'Penguin', 'rocky road', 'medium', 'yes')
-(6, 'Turtle', 'coconut', 'small', 'yes')
-(7, '', '', '', '')
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -869,7 +755,7 @@ Records exist name coconut, or error.
     <span class="c1"># Close the database connection</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="n">schema</span><span class="p">()</span>
+<span class="c1">#schema()</span>
 </pre></div>
 
     </div>
@@ -917,24 +803,10 @@ Records exist name coconut, or error.
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="n">create</span><span class="p">()</span>
+<span class="c1">#create()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>A new recipe record oreo has been created
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -988,20 +860,6 @@ Records exist name coconut, or error.
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Error while executing the UPDATE: database is locked
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -1039,24 +897,10 @@ Records exist name coconut, or error.
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="n">delete</span><span class="p">()</span>
+<span class="c1">#delete()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The row with flavor, oreo was successfully deleted
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -1104,24 +948,10 @@ Records exist name coconut, or error.
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="n">update</span><span class="p">()</span>
+<span class="c1">#update()</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The row with flavor coconut the password has been no
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -1180,7 +1010,35 @@ Records exist name coconut, or error.
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>A new recipe record oreo has been created
+<pre>(1, 'Sherlock', 'chocolate', 'small', 'yes')
+(2, 'Dude', 'vanilla', 'medium', 'yes')
+(3, 'Bunny', 'mint', 'large', 'yes')
+(4, 'Lion', 'mango', 'small', 'yes')
+(5, 'Penguin', 'rocky road', 'medium', 'yes')
+(6, 'Turtle', 'coconut', 'small', 'no')
+(8, 'Kirk', 'oreo', 'small', 'no')
+(9, '', '', '', '')
+A new recipe record peanut butter and chocolate has been created
+No flavor peanut butter and chocolatwe was not found in the table
+The row with flavor peanut butter and chocolate the password has been no
+(1, 'Sherlock', 'chocolate', 'small', 'yes')
+(2, 'Dude', 'vanilla', 'medium', 'yes')
+(3, 'Bunny', 'mint', 'large', 'yes')
+(4, 'Lion', 'mango', 'small', 'yes')
+(5, 'Penguin', 'rocky road', 'medium', 'yes')
+(6, 'Turtle', 'coconut', 'small', 'no')
+(8, 'Kirk', 'oreo', 'small', 'no')
+(9, '', '', '', '')
+(10, 'Mort', 'peanut butter and chocolate', 'single', 'no')
+The row with flavor, peanut butter and chocolate was successfully deleted
+(1, 'Sherlock', 'chocolate', 'small', 'yes')
+(2, 'Dude', 'vanilla', 'medium', 'yes')
+(3, 'Bunny', 'mint', 'large', 'yes')
+(4, 'Lion', 'mango', 'small', 'yes')
+(5, 'Penguin', 'rocky road', 'medium', 'yes')
+(6, 'Turtle', 'coconut', 'small', 'no')
+(8, 'Kirk', 'oreo', 'small', 'no')
+(9, '', '', '', '')
 </pre>
 </div>
 </div>
