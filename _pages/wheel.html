@@ -1,24 +1,20 @@
----
-title: Spin the Wheel Simulation
-layout: base
-description: Spin the Wheel simulation using binary to display images
----
-{% assign BITS = 2 %}
-
+<!DOCTYPE html>
+<html>
 <head>
-    <title>Spin the WHEEL</title>
+    <title>Spin the Wheel</title>
 </head>
 <body>
-    <button onclick="generateRandomColor()">Spin the Wheel</button>
-    <p id="colorOutput"></p>
+    <button onclick="generateRandomImage()">Spin the Wheel</button>
+    <img id="imageOutput" src="" alt="Random Image">
 
 <script>
-        var color = [ "Red", "Blue", "Green", "Yellow" ];
+    var images = ["red.jpg", "blue.jpg", "green.jpg", "yellow.jpg"];
 
-        function generateRandomColor() {
-            var randomColor = color[Math.floor(Math.random() * color.length)];
-            var colorOutput = document.getElementById("colorOutput");
-            colorOutput.textContent = randomColor
-        }
- </script>
+    function generateRandomImage() {
+        var randomImage = images[Math.floor(Math.random() * images.length)];
+        var imageOutput = document.getElementById("imageOutput");
+        imageOutput.src = randomImage;
+    }
+</script>
 </body>
+</html>
