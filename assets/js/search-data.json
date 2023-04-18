@@ -169,14 +169,6 @@
   
 
   
-      ,"page5": {
-          "title": "Spin the Wheel Simulation",
-          "content": "{% assign BITS = 2 %} . Spin the WHEEL . Spin the Wheel .",
-          "url": "https://linaawad1.github.io/linas-fastpages/_pages/wheel.html",
-          "relUrl": "/_pages/wheel.html",
-          "date": ""
-      }
-      
   
 
   
@@ -189,10 +181,7 @@
   
 
   
-  
-
-  
-      ,"page10": {
+      ,"page9": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://linaawad1.github.io/linas-fastpages/robots.txt",
