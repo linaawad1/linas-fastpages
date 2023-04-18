@@ -1,0 +1,24 @@
+---
+title: Spin the Wheel Simulation
+layout: base
+description: Spin the Wheel simulation using binary to display images
+---
+{% assign BITS = 2 %}
+
+<head>
+    <title>Random Card Generator</title>
+</head>
+<body>
+    <button onclick="generateRandomCard()">Spin the Wheel</button>
+    <p id="colorOutput"></p>
+
+<script>
+        var color = [ "Red", "Blue", "Green", "Yellow" ];
+
+        function generateRandomColor() {
+            var randomColor = color[Math.floor(Math.random() * color.length)];
+            var colorOutput = document.getElementById("colorOutput");
+            cardOutput.textContent = randomCard
+        }
+ </script>
+</body>
