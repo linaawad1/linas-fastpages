@@ -169,6 +169,14 @@
   
 
   
+      ,"page5": {
+          "title": "Spin the Wheel",
+          "content": "&lt;!DOCTYPE html&gt; . SPIN THE WHEEL . Spin the Wheel .",
+          "url": "https://linaawad1.github.io/linas-fastpages/wheel/",
+          "relUrl": "/wheel/",
+          "date": ""
+      }
+      
   
 
   
@@ -181,7 +189,10 @@
   
 
   
-      ,"page9": {
+  
+
+  
+      ,"page10": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://linaawad1.github.io/linas-fastpages/robots.txt",
