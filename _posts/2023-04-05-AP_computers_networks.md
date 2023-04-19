@@ -18,13 +18,13 @@ week: 29
 > As we have learned, a computer needs aa program to do something smart.  The sequence of a program initiates a series of actions with the computers Central Processing Unit (CPU). This component is essentially a binary machine focussing on program instructions provided.  The CPU retrieives and stores the data it acts upon in Random Access Memory (RAM). Between the CPU, RAM, and Storage Devices a computer can work with many programs and large amounts of data.
 
 List specification of your Computer, or Computers if working as Pair/Trio
-- Processor GHz:
-- Memory in GB:
-- Storage in GB:
-- OS:
+- Processor GHz: 1.1
+- Memory in GB: 8 
+- Storage in GB: 332.97/500
+- OS: MacOS Big Sur version 11.7.4
 
 Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.
-- Input devices
+- Input devices: keyboards, microphones, cameras, mouses, scanners, where users input/interact with a computer, a hardware device that sends data to a computer, allowing you to interact with and control it.
 - Output devices
 - Program File
 - Program Code
@@ -62,6 +62,14 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 > Watch/review College Board Daily Video 4.1.2
 
 - Complete True of False Questions
+![]({{site.baseurl}}/images/tf.png)
+    - T
+    - F
+    - F
+    - T
+    - F
+    - F
+    - T
 
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
@@ -115,6 +123,7 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 - Complete the network activity, summarize your understanding of fault tolerance.
 
+###### Question 1: Which of the following is NOT a benefit of fault tolerance
 
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
