@@ -13,9 +13,8 @@ title: Spin the Wheel
     <img id="imageOutput" src="" alt="Random Image">
 
 <script>
-    var images = ["red.jpg", "blue.jpg", "green.jpg", "yellow.jpg"];
-
     function generateRandomImage() {
+        var images = ["red.jpg", "blue.jpg", "green.jpg", "yellow.jpg"];
         var randomImage = images[Math.floor(Math.random() * images.length)];
         var imageOutput = document.getElementById("imageOutput");
         imageOutput.src = randomImage;
