@@ -74,11 +74,11 @@ window.onload = wrap_img;
 </head>
 <body>
     <button onclick="generateRandomImage()">Spin the Wheel</button>
-    <img id="imageOutput" src="" alt="Random Image">
+    <img id="imageOutput" src="/_images/blue.jpg" alt="Random Image">
 
 <script>
     function generateRandomImage() {
-        var _images = ["red.jpg", "blue.jpg", "green.jpg", "yellow.jpg"];
+        var images = ["red.jpg", "blue.jpg", "green.jpg", "yellow.jpg"];
         var randomImage = images[Math.floor(Math.random() * images.length)];
         var imageOutput = document.getElementById("imageOutput");
         imageOutput.src = randomImage;
@@ -86,7 +86,6 @@ window.onload = wrap_img;
 </script>
 </body>
 </html>
-
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/linas-fastpages/"></data>
